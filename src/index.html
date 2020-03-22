@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tyler Stewart</title>
+
+  <meta name="description" content="Tyler Stewart">
+  <meta name="author" content="Tyler Stewart">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="referrer" content="unsafe-url" />
+  <meta name="referrer" content="origin" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="referrer" content="origin-when-cross-origin" />
+
+  <link rel="icon" href="fav48.png" sizes="48x48">
+  <link rel="icon" href="fav32.png" sizes="32x32">
+  <link rel="icon" href="fav16.png" sizes="16x16">
+
+  <link rel="stylesheet" href="../node_modules/inter-ui/inter.css">
+
+  <style>
+    /* purgecss start ignore */
+    @tailwind  base;
+    @tailwind  components;
+    /* purgecss end ignore */
+
+    @tailwind utilities;
+
+    .grid-cols-auto-1fr {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .justify-self-center {
+      justify-self: center;
+    }
+
+    @media (min-width: 640px) {
+      .neumorphism-1 {
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9,
+                    -20px -20px 60px #ffffff;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="flex flex-col items-center justify-start sm:justify-center h-screen w-screen bg-white">
+
+  <main class="neumorphism-1 subpixel-antialiased font-body py-6 px-8 pr-10 grid items-center grid-cols-1 grid-rows-2 gap-4 sm:grid-cols-2 sm:grid-rows:1">
+    <img
+      class="rounded-full h-56 w-56 row-span-2 justify-self-center select-none"
+      src="avatar.png"
+      alt="Picture of Tyler Stewart"
+    />
+
+    <div class="grid gap-1 grid-cols-auto-1fr justify-start items-center text-base text-gray-900 row-span-2">
+      <h1 class="text-4xl font-semibold col-span-2">Tyler Stewart</h1>
+
+      <i data-feather="code"></i><span>Software Developer</span>
+
+      <i data-feather="map-pin"></i><span>Canada</span>
+
+      <i data-feather="mail"></i><a href="mailto:hello@tylerstewart.ca" rel="noreferrer nofollow noopener">hello@tylerstewart.ca</a>
+
+      <i data-feather="github"></i><a href="https://github.com/trs" rel="noreferrer nofollow noopener" target="_blank">trs</a>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/feather-icons@4.26.0/dist/feather.min.js"></script>
+  <script>
+    feather.replace({
+      class: 'text-gray-700',
+      width: '1.25rem',
+      height: '1.25rem'
+    });
+  </script>
+</body>
+</html>

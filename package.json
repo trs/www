@@ -1,0 +1,33 @@
+{
+  "name": "trs.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for Tyler Stewart",
+  "main": "src/index.html",
+  "scripts": {
+    "predev": "npx del-cli dev",
+    "dev": "parcel serve src/index.html --out-dir dev --no-source-maps --public-url /",
+    "prebuild": "npx del-cli build",
+    "build": "parcel build src/index.html --out-dir build --no-source-maps --public-url /",
+    "postbuild": "echo \"tylerstewart.ca\" > build/CNAME",
+    "publish": "git branch -D master & git subtree split --prefix build -b master && git push -f origin master:master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trs/trs.github.io.git"
+  },
+  "author": "Tyler Stewart",
+  "license": "ISC",
+  "homepage": "https://tylerstewart.ca",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "del-cli": "^3.0.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.27",
+    "tailwindcss": "^1.2.0"
+  },
+  "dependencies": {
+    "inter-ui": "^3.12.1"
+  },
+  "private": true
+}
