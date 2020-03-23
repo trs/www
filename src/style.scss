@@ -1,0 +1,133 @@
+$media-sm: "min-width: 640px";
+$avatar-size: "14rem";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  color: #1A202C;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem 1rem;
+
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+
+  @media (#{$media-sm}) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    justify-items: flex-start;
+
+    border-radius: 50px;
+    box-shadow: 20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+  }
+}
+
+aside, img {
+  width: #{$avatar-size};
+  height: #{$avatar-size};
+  min-width: #{$avatar-size};
+  min-height: #{$avatar-size};
+  border-radius: 100%;
+}
+
+aside {
+  justify-self: center;
+  grid-row: span 2;
+  border-radius: 100%;
+
+  animation: barberpole 12s ease-in-out infinite;
+  animation-play-state: running;
+
+  background-position: 10% 10%;
+  background-size: 300% 300%;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      #444444,
+      #444444 2rem,
+      #f30067 2rem,
+      #f30067 4rem,
+      #00d1cd 4rem,
+      #00d1cd 6rem,
+      #eaeaea 6rem,
+      #eaeaea 8rem
+    );
+
+  @keyframes barberpole {
+    0% {
+      background-position: 10% 10%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 10% 10%;
+    }
+  }
+}
+
+img {
+  user-select: none;
+  background: transparent;
+  // display: none;
+  filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.2));
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0.3rem;
+  align-self: flex-start;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+
+  align-self: flex-end;
+}
+
+svg {
+  color: #2D3748;
+}
+
+a[href] {
+  text-decoration: underline;
+  color: #1A202C;
+
+  @media (#{$media-sm}) {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
