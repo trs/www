@@ -8,7 +8,7 @@
     "dev": "parcel serve src/index.html --out-dir dev --no-source-maps --public-url /",
     "prebuild": "npx del-cli build",
     "build": "parcel build src/index.html --out-dir build --no-source-maps --public-url /",
-    "postbuild": "echo \"tylerstewart.ca\" > build/CNAME",
+    "postbuild": "npx cpx src/CNAME build",
     "publish": "git branch -D master & git subtree split --prefix build -b master && git push -f origin master:master"
   },
   "repository": {
@@ -21,10 +21,11 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.4",
+    "cpx": "^1.5.0",
     "del-cli": "^3.0.0",
     "parcel-bundler": "^1.12.4",
     "postcss": "^7.0.27",
-    "tailwindcss": "^1.2.0"
+    "sass": "^1.26.3"
   },
   "dependencies": {
     "inter-ui": "^3.12.1"
