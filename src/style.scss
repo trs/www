@@ -52,13 +52,12 @@ aside, img {
   height: #{$avatar-size};
   min-width: #{$avatar-size};
   min-height: #{$avatar-size};
-  border-radius: 100%;
+  border-radius: 50px;
 }
 
 aside {
   justify-self: center;
   grid-row: span 2;
-  border-radius: 100%;
 
   animation: barberpole 12s ease-in-out infinite;
   animation-play-state: running;
