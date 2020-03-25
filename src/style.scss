@@ -31,9 +31,9 @@ main {
   grid-template-rows: auto auto;
   align-items: center;
   justify-items: center;
-  gap: 0.5rem 1rem;
+  gap: 0.5rem 1.5rem;
 
-  padding: 1.5rem 2rem;
+  padding: 3rem;
   background-color: #fff;
 
   @media (#{$media-sm}) {
