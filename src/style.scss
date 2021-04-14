@@ -107,6 +107,10 @@ aside {
       background-position: 0% 0%;
     }
   }
+
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
 
 img {
