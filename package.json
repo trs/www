@@ -1,6 +1,7 @@
 {
-	"name": "trs.github.io",
-	"version": "0.0.1",
+	"name": "www",
+	"version": "3.0.0",
+	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
