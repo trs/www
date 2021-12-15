@@ -1,3 +1,3 @@
-<div class="rounded-full border-8 border-sky-400 dark:border-sky-500">
-  <img src="/tyler.png" width="160px" alt="Tyler Stewart" draggable={false} class="select-none brightness-[90%] rounded-full border-8 border-slate-50 dark:border-slate-800 bg-sky-400 dark:bg-sky-500">
+<div class="rounded-full overflow-hidden p-2 bg-slate-200 dark:bg-slate-700 border-2 border-sky-200 dark:border-sky-800 shadow-sm shadow-sky-200 dark:shadow-sky-800">
+  <img src="/tyler.png" width="160px" alt="Tyler Stewart" draggable={false} class="select-none dark:brightness-[85%] rounded-full">
 </div>
