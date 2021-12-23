@@ -1,5 +1,11 @@
+<script lang="ts">
+  import type {PinnedRepository} from '$lib/services/github';
+
+  export let pinnedRepositories: PinnedRepository[] = [];
+</script>
+
 <div class="select-none">
-  <code class="flex flex-col text-zinc-800 dark:text-zinc-200">
+  <code class="flex flex-col  text-zinc-800 dark:text-zinc-200 max-w-lg overflow-x-scroll whitespace-nowrap">
     <span class="py-0.5">
       <span class="token keyword">class</span>
       <span class="token class-name">TylerStewart</span>
@@ -25,12 +31,36 @@
       <span class="token operator">=</span>
       <span class="token string">'hello@tylerstewart.ca'</span><span class="token punctuation">;</span>
     </a>
+
+    {#if pinnedRepositories.length > 0}
+    <span>&nbsp;</span>
+    <span class="pl-6">
+      <span class="token keyword">public</span>
+      projects
+      <span class="token operator">=</span>
+      [
+    </span>
+
+    {#each pinnedRepositories as repo}
+    <a class="pl-6 hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5" href="{repo.url}" target="_blank" rel="noreferrer nofollow noopener">
+      <span class="pl-6">
+        <span class="token string">'{repo.name}'</span>,
+        <span class="token comment">// {repo.description}</span>
+      </span>
+    </a>
+    {/each}
+
+    <span class="pl-6">
+      ];
+    </span>
+
+    {/if}
+
     <span class="py-0.5">
       <span class="token punctuation">&rbrace</span>
     </span>
     <span class="py-0.5 h-5 self-start rounded-md border-[1px] border-zinc-700 dark:border-zinc-300 animate-[blink_1s_ease-in-out_infinite]" />
   </code>
-
 </div>
 
 <style>
@@ -45,5 +75,8 @@
 }
 .token.string {
   @apply dark:text-orange-400 text-orange-500;
+}
+.token.comment {
+  @apply dark:text-zinc-400 text-zinc-500;
 }
 </style>
