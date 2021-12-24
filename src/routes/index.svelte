@@ -30,7 +30,7 @@
 	<title>Tyler Stewart</title>
 </svelte:head>
 
-<main class="flex flex-col items-center max-w-6xl relative gap-6">
+<main class="flex flex-col items-center max-w-min sm:max-w-6xl relative gap-6 text-xs sm:text-base">
   <!-- <Avatar /> -->
 
   <Editor>
