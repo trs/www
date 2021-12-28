@@ -13,28 +13,34 @@
       <span class="token class-name">SoftwareDeveloper</span>
       <span class="token punctuation">&lbrace;</span>
     </span>
-    <a class="pl-6 hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5" href="https://github.com/trs" target="_blank" rel="noreferrer nofollow noopener">
-      <span class="token keyword">public</span>
-      github
-      <span class="token operator">=</span>
-      <span class="token string">'trs'</span><span class="token punctuation">;</span>
-    </a>
-    <a class="pl-6 hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5" href="https://www.linkedin.com/in/hello-trs/" target="_blank" rel="noreferrer nofollow noopener">
-      <span class="token keyword">public</span>
-      linkedin
-      <span class="token operator">=</span>
-      <span class="token string">'hello-trs'</span><span class="token punctuation">;</span>
-    </a>
-    <a class="pl-6 hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5" href="mailto:hello@tylerstewart.ca" target="_blank" rel="noreferrer nofollow noopener">
-      <span class="token keyword">public</span>
-      email
-      <span class="token operator">=</span>
-      <span class="token string">'hello@tylerstewart.ca'</span><span class="token punctuation">;</span>
-    </a>
+    <span class="translate-x-6 py-0.5">
+      <span class="token keyword mr-[-0.1rem]">public</span>
+      <a class="w-fit hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="https://github.com/trs" target="_blank" rel="noreferrer nofollow noopener">
+        github
+        <span class="token operator">=</span>
+        <span class="token string">'trs'</span><span class="token punctuation">;</span>
+      </a>
+    </span>
+    <span class="translate-x-6 py-0.5">
+      <span class="token keyword mr-[-0.1rem]">public</span>
+      <a class="w-fit hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="https://www.linkedin.com/in/hello-trs/" target="_blank" rel="noreferrer nofollow noopener">
+        linkedin
+        <span class="token operator">=</span>
+        <span class="token string">'hello-trs'</span><span class="token punctuation">;</span>
+      </a>
+    </span>
+    <span class="translate-x-6 py-0.5">
+      <span class="token keyword mr-[-0.1rem]">public</span>
+      <a class="w-fit hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="mailto:hello@tylerstewart.ca" target="_blank" rel="noreferrer nofollow noopener">
+        email
+        <span class="token operator">=</span>
+        <span class="token string">'hello@tylerstewart.ca'</span><span class="token punctuation">;</span>
+      </a>
+    </span>
 
     {#if pinnedRepositories.length > 0}
     <span>&nbsp;</span>
-    <span class="pl-6">
+    <span class="translate-x-6 py-0.5">
       <span class="token keyword">public</span>
       projects
       <span class="token operator">=</span>
@@ -42,18 +48,17 @@
     </span>
 
     {#each pinnedRepositories as repo}
-    <a class="pl-6 hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5" href="{repo.url}" target="_blank" rel="noreferrer nofollow noopener">
-      <span class="pl-6">
+    <!-- <span class="pl-11"> -->
+      <a class="translate-x-11 w-fit hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="{repo.url}" target="_blank" rel="noreferrer nofollow noopener">
         <span class="token string">'{repo.name}'</span>,
         <span class="token comment">// {repo.description}</span>
-      </span>
-    </a>
+      </a>
+    <!-- </span> -->
     {/each}
 
     <span class="pl-6">
       ];
     </span>
-
     {/if}
 
     <span class="py-0.5">
