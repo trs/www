@@ -35,22 +35,22 @@
     <span class="py-0.5">
       <span class="token punctuation">&rbrace;</span>
     </span>
-    <span class="py-0.5 h-5 self-start rounded-md border-[1px] border-zinc-700 dark:border-zinc-300 animate-[blink_1s_ease-in-out_infinite]" />
+    <span class="py-0.5 h-5 self-start rounded-md border-[1px] border-zinc-700 dark:border-snow-storm-1 animate-[blink_1s_ease-in-out_infinite]" />
   </code>
 </div>
 
 <style lang="postcss">
 .token.class-name {
-  @apply dark:text-teal-400 text-teal-600;
+  @apply dark:text-frost-3 text-teal-600;
 }
 .token.keyword {
-  @apply dark:text-sky-500 text-sky-700;
+  @apply dark:text-frost-1 text-sky-700;
 }
 .token.punctuation {
-  @apply dark:text-zinc-100 text-zinc-700;
+  @apply dark:text-snow-storm-1 text-zinc-700;
 }
 .token.string {
-  @apply dark:text-orange-400 text-orange-500;
+  @apply dark:text-aurora-2 text-orange-500;
 }
 /* .token.comment {
   @apply dark:text-zinc-400 text-zinc-500;
