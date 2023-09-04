@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
+  darkMode: ['class', '[data-theme="dark"]'],
 	theme: {
 		extend: {
 			keyframes: {
@@ -34,6 +35,10 @@ export default {
 				'aurora-3': '#EBCB8B',
 				'aurora-4': '#D08770',
 				'aurora-5': '#BF616A',
+
+				'mac-red': '#ED6A5E',
+				'mac-yellow': '#F5BE4F',
+				'mac-green': '#61C554',
 			}
 		}
 	},
