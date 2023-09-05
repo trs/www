@@ -8,8 +8,7 @@
 	<title>Tyler Stewart</title>
 </svelte:head>
 
-<Effect>
-</Effect>
+<Effect></Effect>
 
 <div class="flex place-items-center place-content-center h-full w-full bg-snow-storm-3 dark:bg-zinc-900">
   <main class="flex flex-col items-center max-w-min sm:max-w-6xl relative gap-6 text-xs sm:text-base" >

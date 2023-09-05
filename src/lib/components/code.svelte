@@ -9,7 +9,7 @@
     </span>
 
     <span class="ml-6 py-0.5">
-      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="https://github.com/trs" target="_blank" rel="noreferrer nofollow noopener">
+      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-2 px-1" href="https://github.com/trs" target="_blank" rel="noreferrer nofollow noopener">
         <span class="token keyword">public</span>
         <span>github</span>
         <span class="token operator">=</span>
@@ -17,7 +17,7 @@
       </a>
     </span>
     <span class="ml-6 py-0.5">
-      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="https://www.linkedin.com/in/hello-trs/" target="_blank" rel="noreferrer nofollow noopener">
+      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-2 px-1" href="https://www.linkedin.com/in/hello-trs/" target="_blank" rel="noreferrer nofollow noopener">
         <span class="token keyword">public</span>
         <span>linkedin</span>
         <span class="token operator">=</span>
@@ -25,7 +25,7 @@
       </a>
     </span>
     <span class="ml-6 py-0.5">
-      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-0.5 px-1" href="mailto:hello@tylerstewart.ca" target="_blank" rel="noreferrer nofollow noopener">
+      <a class="hover:bg-zinc-50 dark:hover:bg-zinc-600 rounded-md py-2 px-1" href="mailto:hello@tylerstewart.ca" target="_blank" rel="noreferrer nofollow noopener">
         <span class="token keyword">public</span>
         <span>email</span>
         <span class="token operator">=</span>

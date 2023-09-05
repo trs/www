@@ -3,7 +3,6 @@
 
   import {motionStore} from '../store/motion.store.js';
 
-  // const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   const chars = "01";
 
   const randomString = (length: number): string => {
@@ -26,17 +25,17 @@
     clear = setInterval(updateContent, 100)
   }
 
-  if (browser) {
-    document.onmousemove = (e) => {
-      if (!boxElement) return;
-      const rect = boxElement.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
+  // if (browser) {
+  //   document.onmousemove = (e) => {
+  //     if (!boxElement) return;
+  //     const rect = boxElement.getBoundingClientRect(),
+  //         x = e.clientX - rect.left,
+  //         y = e.clientY - rect.top;
 
-      boxElement.style.setProperty("--x", `${x}px`);
-      boxElement.style.setProperty("--y", `${y}px`);
-    };
-  }
+  //     boxElement.style.setProperty("--x", `${x}px`);
+  //     boxElement.style.setProperty("--y", `${y}px`);
+  //   };
+  // }
 
 </script>
 
@@ -49,8 +48,8 @@
   text-md
   "
   style="
-  --x: 50%;
-  --y: 50%;
+  --x: 30%;
+  --y: 40%;
   -webkit-mask-image: radial-gradient(
     calc(400px * 0.8) circle at var(--x) var(--y),
     rgb(255 255 255) 20%,
