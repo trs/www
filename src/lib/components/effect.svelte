@@ -3,7 +3,8 @@
 
   import {motionStore} from '../store/motion.store.js';
 
-  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  // const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const chars = "01";
 
   const randomString = (length: number): string => {
     let str = '';
