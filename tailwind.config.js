@@ -4,7 +4,33 @@ export default {
   darkMode: ['class', '[data-theme="dark"]'],
 	theme: {
 		extend: {
+      animation: {
+        'gradient-move': 'gradientMove 6s ease infinite',
+        'glow-move': 'glowMove 6s ease infinite',
+      },
 			keyframes: {
+				gradientMove: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+        },
+				glowMove: {
+					'0%, 100%': {
+						boxShadow: '0 0 20px #06b6d4',
+					},
+					'25%': {
+						boxShadow: '0 0 20px #8b5cf6',
+					},
+					'50%': {
+						boxShadow: '0 0 20px #ec4899',
+					},
+					'75%': {
+						boxShadow: '0 0 20px #8b5cf6',
+					},
+				},
 				blink: {
 					'0%, 75%, 100%': {
 						opacity: 0
