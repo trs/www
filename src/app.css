@@ -1,3 +1,74 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme {
+	--color-polar-night-1: #4c566a;
+	--color-polar-night-2: #434c5e;
+	--color-polar-night-3: #3b4252;
+	--color-polar-night-4: #2e3440;
+
+	--color-snow-storm-1: #eceff4;
+	--color-snow-storm-2: #e5e9f0;
+	--color-snow-storm-3: #d8dee9;
+
+	--color-frost-1: #5e81ac;
+	--color-frost-2: #81a1c1;
+	--color-frost-3: #88c0d0;
+	--color-frost-4: #8fbcbb;
+
+	--color-aurora-1: #b48ead;
+	--color-aurora-2: #a3be8c;
+	--color-aurora-3: #ebcb8b;
+	--color-aurora-4: #d08770;
+	--color-aurora-5: #bf616a;
+
+	--color-mac-red: #ed6a5e;
+	--color-mac-yellow: #f5be4f;
+	--color-mac-green: #61c554;
+}
+
+@theme {
+	--animate-blink: blink 1s ease-in-out infinite;
+	@keyframes blink {
+		0%,
+		75%,
+		100% {
+			opacity: 0;
+		}
+		10%,
+		65% {
+			opacity: 1;
+		}
+	}
+}
+
+@theme {
+	--animate-gradient-move: gradient-move 6s ease infinite;
+	@keyframes gradient-move {
+		0%,
+		100% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+	}
+}
+
+@theme {
+	--animate-glow-move: glow-move 6s ease infinite;
+	@keyframes glow-move {
+		0%,
+		100% {
+			box-shadow: 0 0 20px #06b6d4;
+		}
+		25% {
+			box-shadow: 0 0 20px #8b5cf6;
+		}
+		50% {
+			box-shadow: 0 0 20px #ec4899;
+		}
+		75% {
+			box-shadow: 0 0 20px #8b5cf6;
+		}
+	}
+}
